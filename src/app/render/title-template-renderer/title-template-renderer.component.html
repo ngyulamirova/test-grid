@@ -1,0 +1,6 @@
+<div data-toggle="tooltip"
+     data-placement="top"
+     [title]="params?.value?.length > 45 ? params?.value : ''">
+    {{ params?.value }}
+    <button nz-button nzType="primary" (click)="openModal()">open modal</button>
+</div>

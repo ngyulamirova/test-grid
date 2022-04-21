@@ -1,0 +1,20 @@
+<ng-container *ngIf="allData$ | async"></ng-container>
+
+<ag-grid-angular
+  style="width:100%; height: 500px;"
+  class="ag-theme-alpine"
+  [gridOptions]="gridOptions"
+  (gridReady)="gridInit()">
+</ag-grid-angular>
+<input nz-input [(ngModel)]="selectedId">
+<button nz-button (click)="selectNode()">select</button>
+<div *ngIf="selectedId && selected?.data?.specialLoginTitle">Title: {{selected?.data?.specialLoginTitle}}</div>
+
+<nz-modal nzTitle="The first Modal"
+          [(nzVisible)]="openModalFlag"
+          (nzOnCancel)="openModalFlag = false"
+          (nzOnOk)="openModalFlag = false">
+  <ng-container *nzModalContent>
+    <p>{{selectedValue}}</p>
+  </ng-container>
+</nz-modal>

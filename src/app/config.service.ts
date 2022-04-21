@@ -1,0 +1,487 @@
+import { Injectable } from '@angular/core';
+import { delay, of } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class GridService {
+  getGridData() {
+    return of([{
+      "specialLoginId": 6,
+      "specialLoginTitle": "111",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 2,
+        "specialLoginTypeName": "LastNm+Last4SSN+DOB",
+        "specialLoginTypeAlias": "vsiLastNmLastSsnDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "Before continuing, please provide us with the information below for security purposes.",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 48,
+      "specialLoginTitle": "ASD",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 1,
+        "specialLoginTypeName": "LastNm+StudentID+DOB",
+        "specialLoginTypeAlias": "vsiLastNmStudentIdDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "Before continuing, please provide us with the information below for security purposes.<br/>If you don't know your student ID, please contact your school.",
+      "specialLoginIdLabel": "Student ID",
+      "isActive": false,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83167,
+      "specialLoginTitle": "SDF444444",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 5,
+        "specialLoginTypeName": "MS+High+Supplier",
+        "specialLoginTypeAlias": "vsiMsHighSupplierSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p><span style=\"color: rgb(102, 185, 102);\">Before continuing, please provide us with the information below for security purposes.dsdfsdfsfsfz</span></p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83168,
+      "specialLoginTitle": "ADSD",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 10,
+        "specialLoginTypeName": "I+Nine+Document+Witness",
+        "specialLoginTypeAlias": "vsiINineFindAFriendSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>asadsasdxcxvxcvxc</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83169,
+      "specialLoginTitle": "ZXZXXZZ",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>XzxZx  </p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83170,
+      "specialLoginTitle": "FFFFFFF",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>wewerwerwerdxx</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83171,
+      "specialLoginTitle": "SSSSS",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>dfdfdf</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83173,
+      "specialLoginTitle": "ASDASDASDAD",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 6,
+        "specialLoginTypeName": "MS+Low+Supplier",
+        "specialLoginTypeAlias": "vsiMsLowSupplierSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>asdasds</p>",
+      "specialLoginIdLabel": null,
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83174,
+      "specialLoginTitle": "AAAD",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 6,
+        "specialLoginTypeName": "MS+Low+Supplier",
+        "specialLoginTypeAlias": "vsiMsLowSupplierSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>asdadsadasdadsa</p>",
+      "specialLoginIdLabel": null,
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83175,
+      "specialLoginTitle": "sdfdsdf",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 6,
+        "specialLoginTypeName": "MS+Low+Supplier",
+        "specialLoginTypeAlias": "vsiMsLowSupplierSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>werwerwerwr</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83176,
+      "specialLoginTitle": "sdfsdfsdfwe",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 2,
+        "specialLoginTypeName": "LastNm+Last4SSN+DOB",
+        "specialLoginTypeAlias": "vsiLastNmLastSsnDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>asdasda</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83177,
+      "specialLoginTitle": "sfsdfsdfsdfsd",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 6,
+        "specialLoginTypeName": "MS+Low+Supplier",
+        "specialLoginTypeAlias": "vsiMsLowSupplierSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p><u style=\"color: rgb(161, 0, 0);\">werwerwerwerwe?cccccccccc</u></p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83178,
+      "specialLoginTitle": "sssssssssss",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 7,
+        "specialLoginTypeName": "I+Nine",
+        "specialLoginTypeAlias": "vsiINineSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>sfsdfsfsd</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83181,
+      "specialLoginTitle": "dsfdfsfs",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>xfgxfgxxhxfx</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83182,
+      "specialLoginTitle": "333333",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 1,
+        "specialLoginTypeName": "LastNm+StudentID+DOB",
+        "specialLoginTypeAlias": "vsiLastNmStudentIdDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>zxczxczxczxczz</p>",
+      "specialLoginIdLabel": "sdfsdfsdf",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "3OR4OR5OR6Digits",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83183,
+      "specialLoginTitle": "sfsdfsdfsdfsd",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 1,
+        "specialLoginTypeName": "LastNm+StudentID+DOB",
+        "specialLoginTypeAlias": "vsiLastNmStudentIdDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>zczxczxczxcx</p>",
+      "specialLoginIdLabel": "33333333",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "5OR6OR7Digits",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83184,
+      "specialLoginTitle": "sfsdfsdfsdfsd",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 1,
+        "specialLoginTypeName": "LastNm+StudentID+DOB",
+        "specialLoginTypeAlias": "vsiLastNmStudentIdDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>zxdczxczxczcxz</p>",
+      "specialLoginIdLabel": "4444444",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "3OR4OR5OR6Digits",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83185,
+      "specialLoginTitle": "3333",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 1,
+        "specialLoginTypeName": "LastNm+StudentID+DOB",
+        "specialLoginTypeAlias": "vsiLastNmStudentIdDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>2222222</p>",
+      "specialLoginIdLabel": "3333",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "3Letters+5Digits",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83186,
+      "specialLoginTitle": "GGGGGGG",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 1,
+        "specialLoginTypeName": "LastNm+StudentID+DOB",
+        "specialLoginTypeAlias": "vsiLastNmStudentIdDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>Before continuing, please provide us with the information below for security purposes.<br />If you don't know your student ID, please contact your school.</p>",
+      "specialLoginIdLabel": "23232323",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "^[0-9A-Za-z]{5,6}$",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83187,
+      "specialLoginTitle": "l",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>ffff</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83202,
+      "specialLoginTitle": "111SSSSSS",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 2,
+        "specialLoginTypeName": "LastNm+Last4SSN+DOB",
+        "specialLoginTypeAlias": "vsiLastNmLastSsnDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "Before continuing, please provide us with the information below for security purposes.",
+      "specialLoginIdLabel": null,
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83228,
+      "specialLoginTitle": "111SSSSSS",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 2,
+        "specialLoginTypeName": "LastNm+Last4SSN+DOB",
+        "specialLoginTypeAlias": "vsiLastNmLastSsnDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "Before continuing, please provide us with the information below for security purposes.",
+      "specialLoginIdLabel": null,
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83249,
+      "specialLoginTitle": "SDF444444",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 5,
+        "specialLoginTypeName": "MS+High+Supplier",
+        "specialLoginTypeAlias": "vsiMsHighSupplierSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>sdfsdfsdf</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83253,
+      "specialLoginTitle": "SDFGGS",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>sdsdfsdf</p>",
+      "specialLoginIdLabel": null,
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83267,
+      "specialLoginTitle": "SDF444444",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>sfdvdfvdfvdfvdf</p>",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83268,
+      "specialLoginTitle": "SDFGGS",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>sdsdfsdf</p>",
+      "specialLoginIdLabel": null,
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83269,
+      "specialLoginTitle": "SDFGGS444",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 4,
+        "specialLoginTypeName": "LastNm+VerthttpsRequestLogId",
+        "specialLoginTypeAlias": "vsiLastNmVerthttpsRequestLogIdSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "<p>sdsdfsdf</p>",
+      "specialLoginIdLabel": null,
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": null,
+      "isDefault": false,
+      "specialLoginLogo": null
+    }, {
+      "specialLoginId": 83304,
+      "specialLoginTitle": "SDF444444adasdasa",
+      "appStationId": 60,
+      "specialLoginType": {
+        "specialLoginTypeId": 2,
+        "specialLoginTypeName": "LastNm+Last4SSN+DOB",
+        "specialLoginTypeAlias": "vsiLastNmLastSsnDobSpecialLogin"
+      },
+      "specialLoginLogoId": null,
+      "specialLoginText": "Before continuing, please provide us with the information below for security purposes.",
+      "specialLoginIdLabel": "",
+      "isActive": true,
+      "requestCodes": [],
+      "regexPattern": "",
+      "isDefault": false,
+      "specialLoginLogo": null
+    }]).pipe(delay(700));
+  }
+}
